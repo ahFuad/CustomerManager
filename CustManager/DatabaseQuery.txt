@@ -1,0 +1,10 @@
+name CustManager;
+DROP TABLE IF EXISTS `customer`;
+CREATE TABLE `customer` (
+  `cust_id` int(10) unsigned NOT NULL auto_increment,
+  `first_name` varchar(45) NOT NULL,
+  `last_name` varchar(45) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `dob` date NOT NULL,
+  PRIMARY KEY  (`cust_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
